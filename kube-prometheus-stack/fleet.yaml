@@ -1,4 +1,4 @@
-namespace: internal-monitoring
+namespace: monitoring
 targetCustomizations:
   - name: monitoring
     clusterSelector:
@@ -6,4 +6,4 @@ targetCustomizations:
         cluster-role: management
     helm:
       releaseName: kube-prometheus-stack
-      valuesFile: values.yaml
+      valuesFiles: values.yaml
