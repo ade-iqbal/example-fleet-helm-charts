@@ -1,7 +1,0 @@
-namespace: monitoring
-targetCustomizations:
-  - name: monitoring
-    helm: 
-    clusterSelector:
-      matchLabels:
-        cluster-role: management
