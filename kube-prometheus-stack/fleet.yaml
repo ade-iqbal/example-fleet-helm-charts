@@ -1,0 +1,9 @@
+namespace: monitoring
+targetCustomizations:
+  - name: monitoring
+    clusterSelector:
+      matchLabels:
+        cluster-role: management
+    helm:
+      releaseName: kube-prometheus-stack
+      valuesFile: values.yaml
