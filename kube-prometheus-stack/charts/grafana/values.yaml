@@ -81,12 +81,15 @@ readinessProbe:
   httpGet:
     path: /api/health
     port: grafana
+  initialDelaySeconds: 60
+  timeoutSeconds: 10
+  failureThreshold: 12
 
 livenessProbe:
   httpGet:
     path: /api/health
     port: grafana
-  initialDelaySeconds: 60
+  initialDelaySeconds: 600
   timeoutSeconds: 30
   failureThreshold: 10
 
