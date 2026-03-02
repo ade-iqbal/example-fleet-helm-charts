@@ -3,7 +3,7 @@ targetCustomizations:
   - name: monitoring
     clusterSelector:
       matchLabels:
-        cluster-role: management
+        cluster-group: management
     helm:
       releaseName: kube-prometheus-stack
       valuesFiles: 
