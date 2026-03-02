@@ -1,9 +1,5 @@
-defaultNamespace: monitoring
 targetCustomizations:
   - name: monitoring
-    clusterSelector:
-      matchLabels:
-        cluster-group: management
     helm:
       releaseName: kube-prometheus-stack
       valuesFiles: 
